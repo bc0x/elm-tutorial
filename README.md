@@ -27,6 +27,11 @@ add a b = a + b
 add7 = add 7
 add7 3
 3 |> add7
+3 |> add7 |> add 10
+
+greaterThan a b = a > b
+greaterThan (add7 7) (add 4 5)
+greaterThan (add 1 7) (add 4 5)
 
 -- Function Arguments
 -- toString : a -> String
