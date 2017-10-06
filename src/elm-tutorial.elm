@@ -2,7 +2,7 @@ import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 
 
--- Saying step1 will have a model, view, and update
+-- defining main: will have a model, view, and update
 main =
   Html.beginnerProgram
     { model = model
@@ -15,10 +15,11 @@ main =
 -- MODEL
 
 -- Definition
-type alias Model = String
-
+type alias Model = 
+  { name: String
+  }
 
 model : Model
 model =
-  "World"
+  { name = "" }
 
