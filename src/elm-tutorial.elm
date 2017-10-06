@@ -1,3 +1,6 @@
+module Hello exposing (..)
+
+
 import Html exposing (Html, button, div, text)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onInput)
@@ -46,5 +49,5 @@ view model =
   div []
     [ Html.input [ placeholder "Text to reverse", onInput NewName ] []
     , div [] [ text ("Hello " ++ model.name) ]
-    , div [] [ text (String.reverse ("Hello" ++ model.name)) ]
+    , div [] [ text (String.reverse ("Hello " ++ model.name)) ]
     ]

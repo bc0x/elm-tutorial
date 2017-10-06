@@ -13,4 +13,6 @@ isBike "Trek"
 #records
 bikes2 = { mountain = [ "Santa Cruz", "Trek", "Diamondback" ], road = [ "Giant", "Specialized", "Trek", "Cannondale" ] }
 bikes2.mountain
+
+elm-make src/elm-tutorial.elm --output=dist/main.js
 ```
