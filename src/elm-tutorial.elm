@@ -1,5 +1,6 @@
 import Html exposing (Html, button, div, text)
-import Html.Events exposing (onClick)
+import Html.Attributes exposing (..)
+import Html.Events exposing (onInput)
 
 
 -- defining main: will have a model, view, and update
@@ -38,7 +39,12 @@ update msg model =
     NewName newName ->
       { model | name = newName }
 
+-- VIEW
 
-
-
-
+view : Model -> Html Msg
+view model =
+  div []
+    [ Html.input [ placeholder "Text to reverse", onInput NewName ] []
+    , div [] [ text ("Hello " ++ model.name) ]
+    , div [] [ text (String.reverse ("Hello" ++ model.name)) ]
+    ]
