@@ -15,4 +15,7 @@ isBike "Trek"
 #records
 bikes2 = { mountain = [ "Santa Cruz", "Trek", "Diamondback" ], road = [ "Giant", "Specialized", "Trek", "Cannondale" ] }
 bikes2.mountain
+
+isBike b = List.member b bikes2.mountain
+isMountainBike b = ( isBike b )
 ```
