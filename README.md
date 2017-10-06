@@ -23,4 +23,11 @@ isMountainBike b = ( isBike b )
 add a b = a + b
 add7 = add 7
 add7 3
+3 |> add7
+
+-- Function Arguments
+-- toString : a -> String
+-- map : (a -> b) -> List a -> List b
+-- (a -> String) -> List a -> List String
+intToString list = List.map toString list
 ```
