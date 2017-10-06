@@ -4,7 +4,7 @@ import Html.Events exposing (onClick)
 
 -- Saying step1 will have a model, view, and update
 main =
-  Html.step1
+  Html.beginnerProgram
     { model = model
     , view = view
     , update = update
